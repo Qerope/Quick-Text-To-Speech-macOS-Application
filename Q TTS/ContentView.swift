@@ -6,14 +6,55 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
+    @State var text: String = ""
+    @State var lang: Int = 1
+    @State var clipboard: Bool = true
+    var langs = ["English", "French", "German", "Spanish", "Italian"]
+    var langCodes = ["en-US", "fr-FR", "de-DE", "es-ES", "it-IT"]
+
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack(alignment: .center)
+        {
+            HStack(alignment: .center) {
+                Text("Text:")
+                    .font(.callout)
+                    .bold()
+                TextField("Enter Text...", text: $text)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }.padding().frame(width: 500, height: .infinity)
+            Button("Speak") {
+                let tx: String
+                if(clipboard){
+                    tx = (NSPasteboard.general.pasteboardItems?.first?.string(forType: .string))!
+                }else{
+                    tx = text
+                }
+                
+                readMe(myText: tx , myLang: langCodes[lang])
+            }.padding()
+            Picker(selection: $lang, label: Text("Language")) {
+                            ForEach(0..<langs.count) { index in
+                                Text(self.langs[index]).tag(index)
+                            }
+            }.pickerStyle(SegmentedPickerStyle()).padding()
+            Toggle(isOn: $clipboard) {
+                Text("Get Text From ClipBoard")
+            }.padding()
+        }
     }
 }
 
+func readMe( myText: String , myLang : String) {
+    let utterance = AVSpeechUtterance(string: myText )
+    utterance.voice = AVSpeechSynthesisVoice(language: myLang)
+    utterance.rate = 0.5
+    
+    let synthesizer = AVSpeechSynthesizer()
+    synthesizer.speak(utterance)
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

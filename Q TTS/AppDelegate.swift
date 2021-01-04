@@ -7,10 +7,12 @@
 
 import Cocoa
 import SwiftUI
+import AVFoundation
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    var statusBarItem: NSStatusItem!
     var window: NSWindow!
 
 
@@ -28,6 +30,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)
+        
+        let statusBar = NSStatusBar.system
+                statusBarItem = statusBar.statusItem(
+                    withLength: NSStatusItem.squareLength)
+                statusBarItem.button?.image = NSImage(named: "icon")
+                statusBarItem.button?.imageScaling = .scaleProportionallyDown
+        
+                statusBarItem.button?.action = #selector(AppDelegate.readMe)
+    }
+    
+    @objc func readMe() {
+        let utterance = AVSpeechUtterance(string: (NSPasteboard.general.pasteboardItems?.first?.string(forType: .string))! )
+        utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
+        utterance.rate = 0.5
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

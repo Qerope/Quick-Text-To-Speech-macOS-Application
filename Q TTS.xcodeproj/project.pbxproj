@@ -82,6 +82,7 @@
 				F13A988425A34C1F00922D21 /* Q TTSTests */,
 				F13A988F25A34C1F00922D21 /* Q TTSUITests */,
 				F13A986D25A34C1F00922D21 /* Products */,
+				F13A98A725A352A300922D21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +136,13 @@
 			path = "Q TTSUITests";
 			sourceTree = "<group>";
 		};
+		F13A98A725A352A300922D21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +159,8 @@
 			dependencies = (
 			);
 			name = "Q TTS";
+			packageProductDependencies = (
+			);
 			productName = "Q TTS";
 			productReference = F13A986C25A34C1F00922D21 /* Q TTS.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +232,8 @@
 				Base,
 			);
 			mainGroup = F13A986325A34C1F00922D21;
+			packageReferences = (
+			);
 			productRefGroup = F13A986D25A34C1F00922D21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
