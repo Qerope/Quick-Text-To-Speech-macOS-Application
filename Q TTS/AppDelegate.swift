@@ -41,8 +41,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func readMe() {
+        let def = UserDefaults.standard
+        let lang = def.string(forKey: "lang")
         let utterance = AVSpeechUtterance(string: (NSPasteboard.general.pasteboardItems?.first?.string(forType: .string))! )
-        utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
+        utterance.voice = AVSpeechSynthesisVoice(language: lang)
         utterance.rate = 0.5
         
         let synthesizer = AVSpeechSynthesizer()

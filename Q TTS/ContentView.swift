@@ -39,7 +39,8 @@ struct ContentView: View {
                             ForEach(0..<langs.count) { index in
                                 Text(self.langs[index]).tag(index)
                             }
-            }.pickerStyle(SegmentedPickerStyle()).padding()
+            }.pickerStyle(SegmentedPickerStyle())
+            .padding()
             Toggle(isOn: $clipboard) {
                 Text("Get Text From ClipBoard")
             }.padding()
@@ -53,6 +54,8 @@ func readMe( myText: String , myLang : String) {
     utterance.rate = 0.5
     
     let synthesizer = AVSpeechSynthesizer()
+    let def = UserDefaults.standard
+    def.set(myLang, forKey: "lang")
     synthesizer.speak(utterance)
 }
 
