@@ -1,5 +1,5 @@
-# Quick-Text-To-Speech-macOS-Application
-Text to Speech application with multiple language support and quick speak button in menu bar
+# Quick Text To Speech macOS Application
+Text to Speech application with multiple language support and quick speak button in menu bar and speed controller
 Supported Languages:
 <table>
 <td>English (US)
