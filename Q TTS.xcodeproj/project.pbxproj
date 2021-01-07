@@ -12,26 +12,7 @@
 		F13A987425A34C1F00922D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13A987325A34C1F00922D21 /* Assets.xcassets */; };
 		F13A987725A34C1F00922D21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13A987625A34C1F00922D21 /* Preview Assets.xcassets */; };
 		F13A987A25A34C1F00922D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13A987825A34C1F00922D21 /* Main.storyboard */; };
-		F13A988625A34C1F00922D21 /* Q_TTSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A988525A34C1F00922D21 /* Q_TTSTests.swift */; };
-		F13A989125A34C1F00922D21 /* Q_TTSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A989025A34C1F00922D21 /* Q_TTSUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F13A988225A34C1F00922D21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F13A986425A34C1F00922D21 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F13A986B25A34C1F00922D21;
-			remoteInfo = "Q TTS";
-		};
-		F13A988D25A34C1F00922D21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F13A986425A34C1F00922D21 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F13A986B25A34C1F00922D21;
-			remoteInfo = "Q TTS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F13A986C25A34C1F00922D21 /* Q TTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Q TTS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,30 +23,14 @@
 		F13A987925A34C1F00922D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F13A987B25A34C1F00922D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F13A987C25A34C1F00922D21 /* Q_TTS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Q_TTS.entitlements; sourceTree = "<group>"; };
-		F13A988125A34C1F00922D21 /* Q TTSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Q TTSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13A988525A34C1F00922D21 /* Q_TTSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_TTSTests.swift; sourceTree = "<group>"; };
 		F13A988725A34C1F00922D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F13A988C25A34C1F00922D21 /* Q TTSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Q TTSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13A989025A34C1F00922D21 /* Q_TTSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_TTSUITests.swift; sourceTree = "<group>"; };
 		F13A989225A34C1F00922D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F13A986925A34C1F00922D21 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F13A987E25A34C1F00922D21 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F13A988925A34C1F00922D21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				F13A986C25A34C1F00922D21 /* Q TTS.app */,
-				F13A988125A34C1F00922D21 /* Q TTSTests.xctest */,
-				F13A988C25A34C1F00922D21 /* Q TTSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,42 +128,6 @@
 			productReference = F13A986C25A34C1F00922D21 /* Q TTS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F13A988025A34C1F00922D21 /* Q TTSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F13A989825A34C1F00922D21 /* Build configuration list for PBXNativeTarget "Q TTSTests" */;
-			buildPhases = (
-				F13A987D25A34C1F00922D21 /* Sources */,
-				F13A987E25A34C1F00922D21 /* Frameworks */,
-				F13A987F25A34C1F00922D21 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F13A988325A34C1F00922D21 /* PBXTargetDependency */,
-			);
-			name = "Q TTSTests";
-			productName = "Q TTSTests";
-			productReference = F13A988125A34C1F00922D21 /* Q TTSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F13A988B25A34C1F00922D21 /* Q TTSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F13A989B25A34C1F00922D21 /* Build configuration list for PBXNativeTarget "Q TTSUITests" */;
-			buildPhases = (
-				F13A988825A34C1F00922D21 /* Sources */,
-				F13A988925A34C1F00922D21 /* Frameworks */,
-				F13A988A25A34C1F00922D21 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F13A988E25A34C1F00922D21 /* PBXTargetDependency */,
-			);
-			name = "Q TTSUITests";
-			productName = "Q TTSUITests";
-			productReference = F13A988C25A34C1F00922D21 /* Q TTSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,14 +139,6 @@
 				TargetAttributes = {
 					F13A986B25A34C1F00922D21 = {
 						CreatedOnToolsVersion = 12.2;
-					};
-					F13A988025A34C1F00922D21 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = F13A986B25A34C1F00922D21;
-					};
-					F13A988B25A34C1F00922D21 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = F13A986B25A34C1F00922D21;
 					};
 				};
 			};
@@ -239,8 +158,6 @@
 			projectRoot = "";
 			targets = (
 				F13A986B25A34C1F00922D21 /* Q TTS */,
-				F13A988025A34C1F00922D21 /* Q TTSTests */,
-				F13A988B25A34C1F00922D21 /* Q TTSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,20 +173,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F13A987F25A34C1F00922D21 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F13A988A25A34C1F00922D21 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,36 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F13A987D25A34C1F00922D21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F13A988625A34C1F00922D21 /* Q_TTSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F13A988825A34C1F00922D21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F13A989125A34C1F00922D21 /* Q_TTSUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F13A988325A34C1F00922D21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F13A986B25A34C1F00922D21 /* Q TTS */;
-			targetProxy = F13A988225A34C1F00922D21 /* PBXContainerItemProxy */;
-		};
-		F13A988E25A34C1F00922D21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F13A986B25A34C1F00922D21 /* Q TTS */;
-			targetProxy = F13A988D25A34C1F00922D21 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F13A987825A34C1F00922D21 /* Main.storyboard */ = {
@@ -448,6 +322,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Q TTS/Q_TTS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Q TTS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Q TTS/Info.plist";
@@ -456,6 +331,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -470,6 +346,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Q TTS/Q_TTS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Q TTS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Q TTS/Info.plist";
@@ -478,89 +355,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		F13A989925A34C1F00922D21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Q TTSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Q TTS.app/Contents/MacOS/Q TTS";
-			};
-			name = Debug;
-		};
-		F13A989A25A34C1F00922D21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Q TTSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Q TTS.app/Contents/MacOS/Q TTS";
-			};
-			name = Release;
-		};
-		F13A989C25A34C1F00922D21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Q TTSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Q TTS";
-			};
-			name = Debug;
-		};
-		F13A989D25A34C1F00922D21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Q TTSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Q TTS";
 			};
 			name = Release;
 		};
@@ -581,24 +379,6 @@
 			buildConfigurations = (
 				F13A989625A34C1F00922D21 /* Debug */,
 				F13A989725A34C1F00922D21 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F13A989825A34C1F00922D21 /* Build configuration list for PBXNativeTarget "Q TTSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F13A989925A34C1F00922D21 /* Debug */,
-				F13A989A25A34C1F00922D21 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F13A989B25A34C1F00922D21 /* Build configuration list for PBXNativeTarget "Q TTSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F13A989C25A34C1F00922D21 /* Debug */,
-				F13A989D25A34C1F00922D21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

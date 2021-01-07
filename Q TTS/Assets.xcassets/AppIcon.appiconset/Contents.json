@@ -1,51 +1,61 @@
 {
   "images" : [
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_16x16x32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_32x32x32-1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_32x32x32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_128x128x32-1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_128x128x32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_256x256x32-1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_256x256x32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_512x512x32-1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_512x512x32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
+      "filename" : "4cb7a10a007ac10e2c04cbfaa60873cd_qBittorrent_Alt_1024x1024x32.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"

@@ -45,7 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let lang = def.string(forKey: "lang")
         let utterance = AVSpeechUtterance(string: (NSPasteboard.general.pasteboardItems?.first?.string(forType: .string))! )
         utterance.voice = AVSpeechSynthesisVoice(language: lang)
-        utterance.rate = 0.5
+        utterance.rate = def.float(forKey: "speed")
         
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)

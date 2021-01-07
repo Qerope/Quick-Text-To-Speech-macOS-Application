@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var text: String = ""
     @State var lang: Int = 1
     @State var clipboard: Bool = true
+    @State var speed: Float = 0.5
     var langs = ["English", "French", "German", "Spanish", "Italian"]
     var langCodes = ["en-US", "fr-FR", "de-DE", "es-ES", "it-IT"]
 
@@ -33,8 +34,10 @@ struct ContentView: View {
                     tx = text
                 }
                 
-                readMe(myText: tx , myLang: langCodes[lang])
+                readMe(myText: tx , myLang: langCodes[lang], speed: speed)
             }.padding()
+            Text("Speed")
+            Slider(value: $speed).padding()
             Picker(selection: $lang, label: Text("Language")) {
                             ForEach(0..<langs.count) { index in
                                 Text(self.langs[index]).tag(index)
@@ -48,14 +51,16 @@ struct ContentView: View {
     }
 }
 
-func readMe( myText: String , myLang : String) {
+func readMe( myText: String , myLang : String, speed : Float) {
     let utterance = AVSpeechUtterance(string: myText )
     utterance.voice = AVSpeechSynthesisVoice(language: myLang)
-    utterance.rate = 0.5
+    let def = UserDefaults.standard
+    def.set(speed, forKey: "speed")
+    utterance.rate = def.float(forKey: "speed")
     
     let synthesizer = AVSpeechSynthesizer()
-    let def = UserDefaults.standard
     def.set(myLang, forKey: "lang")
+    
     synthesizer.speak(utterance)
 }
 
