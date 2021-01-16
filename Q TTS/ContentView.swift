@@ -13,8 +13,8 @@ struct ContentView: View {
     @State var lang: Int = 1
     @State var clipboard: Bool = true
     @State var speed: Float = 0.5
-    var langs = ["English", "French", "German", "Spanish", "Italian"]
-    var langCodes = ["en-US", "fr-FR", "de-DE", "es-ES", "it-IT"]
+    var langs = ["English", "French", "German", "Spanish", "Italian", "Arabic"]
+    var langCodes = ["en-US", "fr-FR", "de-DE", "es-ES", "it-IT", "ar-SA"]
 
     var body: some View {
         VStack(alignment: .center)

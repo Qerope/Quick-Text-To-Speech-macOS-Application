@@ -23,10 +23,6 @@
 		F13A987925A34C1F00922D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F13A987B25A34C1F00922D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F13A987C25A34C1F00922D21 /* Q_TTS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Q_TTS.entitlements; sourceTree = "<group>"; };
-		F13A988525A34C1F00922D21 /* Q_TTSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_TTSTests.swift; sourceTree = "<group>"; };
-		F13A988725A34C1F00922D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F13A989025A34C1F00922D21 /* Q_TTSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_TTSUITests.swift; sourceTree = "<group>"; };
-		F13A989225A34C1F00922D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				F13A986E25A34C1F00922D21 /* Q TTS */,
-				F13A988425A34C1F00922D21 /* Q TTSTests */,
-				F13A988F25A34C1F00922D21 /* Q TTSUITests */,
 				F13A986D25A34C1F00922D21 /* Products */,
 				F13A98A725A352A300922D21 /* Frameworks */,
 			);
@@ -79,24 +73,6 @@
 				F13A987625A34C1F00922D21 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F13A988425A34C1F00922D21 /* Q TTSTests */ = {
-			isa = PBXGroup;
-			children = (
-				F13A988525A34C1F00922D21 /* Q_TTSTests.swift */,
-				F13A988725A34C1F00922D21 /* Info.plist */,
-			);
-			path = "Q TTSTests";
-			sourceTree = "<group>";
-		};
-		F13A988F25A34C1F00922D21 /* Q TTSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F13A989025A34C1F00922D21 /* Q_TTSUITests.swift */,
-				F13A989225A34C1F00922D21 /* Info.plist */,
-			);
-			path = "Q TTSUITests";
 			sourceTree = "<group>";
 		};
 		F13A98A725A352A300922D21 /* Frameworks */ = {
@@ -322,7 +298,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Q TTS/Q_TTS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Q TTS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Q TTS/Info.plist";
@@ -331,7 +307,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -346,7 +322,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Q TTS/Q_TTS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Q TTS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Q TTS/Info.plist";
@@ -355,7 +331,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qerope.Q-TTS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
