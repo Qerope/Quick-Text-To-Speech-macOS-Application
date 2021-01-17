@@ -13,8 +13,8 @@ struct ContentView: View {
     @State var lang: Int = 1
     @State var clipboard: Bool = true
     @State var speed: Float = 0.5
-    var langs = ["English", "French", "German", "Spanish", "Italian", "Arabic"]
-    var langCodes = ["en-US", "fr-FR", "de-DE", "es-ES", "it-IT", "ar-SA"]
+    var langs = ["English", "French", "German", "Spanish", "Italian", "Arabic", "Russian", "Thai"]
+    var langCodes = ["en-US", "fr-FR", "de-DE", "es-ES", "it-IT", "ar-SA", "ru-RU", "th-TH"]
 
     var body: some View {
         VStack(alignment: .center)
@@ -42,7 +42,7 @@ struct ContentView: View {
                             ForEach(0..<langs.count) { index in
                                 Text(self.langs[index]).tag(index)
                             }
-            }.pickerStyle(SegmentedPickerStyle())
+            }.pickerStyle(DefaultPickerStyle())
             .padding()
             Toggle(isOn: $clipboard) {
                 Text("Get Text From ClipBoard")
