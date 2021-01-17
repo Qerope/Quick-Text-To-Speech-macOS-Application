@@ -9,3 +9,5 @@ Supported Languages:
 <td>Spanish (SP)
 <td>Italian (IT)
 <td>Arabic (SA)
+<td>Russian (RU)
+<td>Thai (TH)
