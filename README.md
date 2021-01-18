@@ -1,4 +1,6 @@
 # Quick Text To Speech macOS Application
+
+![Screenshot](Screenshot.png)
 Text to Speech application with multiple language support and quick speak button in menu bar and speed controller
 Let me know if you need to add other languages
 Supported Languages:
